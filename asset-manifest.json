@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.018f7097.css",
-    "main.js": "/static/js/main.ac9ccb26.js",
-    "index.html": "/index.html",
-    "main.018f7097.css.map": "/static/css/main.018f7097.css.map",
-    "main.ac9ccb26.js.map": "/static/js/main.ac9ccb26.js.map"
+    "main.css": "/mep-calculator/static/css/main.018f7097.css",
+    "main.js": "/mep-calculator/static/js/main.ac9ccb26.js",
+    "index.html": "/mep-calculator/index.html",
+    "main.018f7097.css.map": "/mep-calculator/static/css/main.018f7097.css.map",
+    "main.ac9ccb26.js.map": "/mep-calculator/static/js/main.ac9ccb26.js.map"
   },
   "entrypoints": [
     "static/css/main.018f7097.css",
