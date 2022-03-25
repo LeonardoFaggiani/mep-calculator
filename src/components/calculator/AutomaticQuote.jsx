@@ -74,12 +74,13 @@ function setColumnsByCurrency() {
 const getDataFromBroker = async () => {
 
     const result = await axios({
-        method: 'get',
+        method: 'GET',
+        timeout: 0,
         url: 'https://bullmarketbrokers.com/Information/StockPrice/GetStockPrices?term=3&index=bonos',
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Content-Type": "application/json;charset=utf-8",
-            "Access-Control-Allow-Methods": "GET"
+            "Cookie": "ASP.NET_SessionId=xkyo3obyiwz5joxfwfv2uryq"
         }
     })
 
