@@ -35,7 +35,7 @@ app.use('/broker', brokersRouter);
 
 //enable cors
 app.use(cors({
-  origin: ['http://localhost:3000/','http://localhost:3000','https://mep-calculator.azurewebsites.net'],  
+  origin: ['http://localhost:3000/','http://localhost:3000','https://leonardofaggiani.github.io'],  
 }));
 
 // catch 404 and forward to error handler
