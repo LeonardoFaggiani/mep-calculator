@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.paddingWarningCard {
+ padding: 1rem 2.5rem !important;
+}
+
+.cardTitleWarning {
+ font-weight: 500;
+}
+
+.customPaddingTicker {
+  padding-right: 1.5rem !important;
+}
