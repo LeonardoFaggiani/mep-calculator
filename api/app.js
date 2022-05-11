@@ -5,7 +5,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
 var brokersRouter = require('./routes/brokers');
 
 var app = express();
@@ -13,8 +12,7 @@ var app = express();
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
-  //res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-  
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');  
   // Pass to next layer of middleware
   next();
 });
@@ -29,13 +27,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/broker', brokersRouter);
+app.use('/api/broker', brokersRouter);
 
 
 //enable cors
 app.use(cors({
-  origin: ['http://localhost:3000/','http://localhost:3000','https://leonardofaggiani.github.io'],  
+  origin: ['http://localhost:3000/','http://localhost:3000'],  
 }));
 
 // catch 404 and forward to error handler

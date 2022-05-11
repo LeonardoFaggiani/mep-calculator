@@ -9,7 +9,7 @@ const asyncMiddleware = fn =>
   };
 
 
-router.get('api/', asyncMiddleware(async (req, res, next) => {
+router.get('/', asyncMiddleware(async (req, res, next) => {
   var result = await getBondsFromBrokerGreaterThanFiftyOperations();
   res.json(result)
 }));

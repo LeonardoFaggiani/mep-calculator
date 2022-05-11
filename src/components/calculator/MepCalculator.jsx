@@ -106,7 +106,7 @@ function orderByTicker(a, b) {
 
 async function getDataFromBroker() {
 
-    const response = await axios.get("https://mep-calculator.azurewebsites.net/api/broker").then(res => res.data);
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/broker`).then(res => res.data);
 
     return response
 
